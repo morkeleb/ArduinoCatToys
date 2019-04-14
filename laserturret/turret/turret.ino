@@ -8,6 +8,7 @@ Servo servo_y;
 int pos = 0;    // variable to store the servo position 
 int next_position = 0;
 int laser_pin = 12;
+
 int servo_x_pin = 9;
 int servo_y_pin = 10;
 
@@ -21,9 +22,10 @@ void setup() {
 
 
   // servos are configured for luxorparts SG90
-  
   servo_x.attach(servo_x_pin, 700, 2300);
   servo_y.attach(servo_y_pin, 700, 2300);
+
+  
   servo_x.write(90);
   servo_y.write(90);
 
